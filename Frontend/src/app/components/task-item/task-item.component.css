@@ -1,0 +1,18 @@
+.task {
+    background: #f4f4f4;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.task__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+  }
+  .task__title fa-icon {
+    color: rgb(107, 107, 107);
+  }
+  .task.reminder {
+    border-left: 0.25rem solid green;
+  }

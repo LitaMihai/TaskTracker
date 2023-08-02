@@ -1,0 +1,41 @@
+<form 
+    *ngIf="showAddTask" 
+    class="form-container" 
+    [@inOutAnimation]
+    (ngSubmit)="onSubmit()"
+>
+    <div class="form-control">
+        <label for="formText">New task name</label>
+        <input 
+            type="text" 
+            id="formText" 
+            name="formText" 
+            [(ngModel)]="text" 
+            autocomplete="off" />
+    </div>
+    <div class="form-control">
+        <label for="formDatetime">Day &amp; Time</label>
+        <input 
+            type="datetime-local" 
+            id="formDatetime" 
+            name="formDatetime" 
+            [(ngModel)]="date" />
+    </div>
+    <div class="form-control form-control-check">
+        <label for="formReminder">Set reminder?</label>
+        <input 
+            type="checkbox"
+            name="formReminder" 
+            id="formReminder"
+            title="Toggle check"
+            [(ngModel)]="reminder"
+        />
+    </div>
+    <div class="form-control-btn">
+        <input 
+            type="submit" 
+            value="Save Task" 
+            class="btn" />
+    </div>
+    {{text}}
+</form>
