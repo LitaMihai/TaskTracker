@@ -14,25 +14,25 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TaskService {
-  private apiURL = 'http://localhost:5000/tasks';
+  private apiURL = 'http://localhost:8080/tasks';
 
   constructor(private httpClient: HttpClient) { }
 
   getTasks(): Observable<Task[]> {
-    return this.httpClient.get<Task[]>(this.apiURL);
+    return this.httpClient.get<Task[]>(this.apiURL+"/all");
   }
 
   deleteTask(task: Task): Observable<Task> {
-    const url = this.apiURL + '/' + task.id;
+    const url = this.apiURL + '/delete/' + task.id;
     return this.httpClient.delete<Task>(url);
   }
 
   updateTaskReminder(task: Task): Observable<Task> {
-    const url = this.apiURL + '/' + task.id;
+    const url = this.apiURL + '/update/' + task.id;
     return this.httpClient.put<Task>(url, task, httpOptions);
   }
 
   addTask(task: Task): Observable<Task> {
-    return this.httpClient.post<Task>(this.apiURL, task, httpOptions);
+    return this.httpClient.post<Task>(this.apiURL + "/add", task, httpOptions);
   }
 }

@@ -78,7 +78,7 @@ export class AddTaskComponent implements OnInit {
       // Create new Task object
       const newTaskObj = {
         text: this.text,
-        day: formattedTime,
+        date: formattedTime,
         reminder: this.reminder,
       };
 

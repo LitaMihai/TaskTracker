@@ -7,15 +7,19 @@
 - [Angular CLI - v16.1.6](https://angular.io/)
 - [npm - v9.6.7](https://www.npmjs.com/)
 - [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install)
-- [Fake Json Server](https://www.npmjs.com/package/json-server)
+- [~~Fake Json Server~~](https://www.npmjs.com/package/json-server)
+- [Java - v20](https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html)
+- [SpringBoot - v3.1.2](https://spring.io/projects/spring-boot)
+- [MongoDB](https://www.mongodb.com/)
 
 ## Backend
 
-### Start the backend server
+### Start the fake backend server (DEPRECATED)
 To start the backend server run the following command in the `Fake JSON Server` directory:
 ```
 npm run server
 ```
+__*This is deprecated because we are using a real backend server now*__.
 
 ## Frontend
 
