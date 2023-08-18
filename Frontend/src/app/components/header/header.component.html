@@ -1,9 +1,11 @@
 <header>
-    <h1 class="gradient-text">{{ title }}</h1>
-    <app-button 
-        *ngIf="hasRoute('/')"
-        color="{{ showAddTask ? '#599CDF' : ' #0D47A1' }}" 
-        text="{{ showAddTask ? 'Close' : 'Add Task' }}"
-        (btnClickEvent)="toggleAddTask()"
-    ></app-button>
+    <nav>
+        <h1 class="header-title">{{ title }}</h1>
+        <app-button 
+            *ngIf="hasRoute('/')"
+            color="{{ showAddTask ? '#599CDF' : ' #0D47A1' }}" 
+            text="{{ showAddTask ? 'Close' : 'Add Task' }}"
+            (btnClickEvent)="toggleAddTask()"
+        ></app-button>
+    </nav>
 </header>

@@ -9,6 +9,7 @@
 # Node
 /Frontend/node_modules
 /Fake\ Json\ Server/node_modules
+node_modules
 npm-debug.log
 yarn-error.log
 

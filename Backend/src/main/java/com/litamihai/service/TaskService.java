@@ -3,12 +3,10 @@ package com.litamihai.service;
 import com.litamihai.exceptions.TaskNotFoundException;
 import com.litamihai.model.TaskModel;
 import com.litamihai.repository.TaskRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @Service
